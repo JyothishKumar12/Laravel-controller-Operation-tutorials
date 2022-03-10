@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminProfileController;
-
+use App\Http\Controllers\AdminUserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('about/{name}',[AboutController::class,'show']);
 Route::get('aboutme/',[AdminProfileController::class,'showprofile']);
+Route::get('user/{name}',[AdminUserController::class,'uservalue']);
