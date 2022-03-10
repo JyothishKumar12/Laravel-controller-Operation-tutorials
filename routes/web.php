@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::get('about/{name}',[AboutController::class,'show']);
 Route::get('aboutme/',[AdminProfileController::class,'showprofile']);
 Route::get('user/{name}',[AdminUserController::class,'uservalue']);
+Route::get('users',[AdminUserController::class,'uservalue2']);

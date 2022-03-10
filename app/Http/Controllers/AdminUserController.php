@@ -10,4 +10,9 @@ class AdminUserController extends Controller
     {
         return view('admin.user',['name'=>$name]);
     }
+
+    function uservalue2(){
+        $nm = "Laravel";
+        return view ('admin.users',['n'=>$nm]);
+    }
 }
