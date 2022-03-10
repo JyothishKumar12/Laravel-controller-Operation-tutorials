@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +17,6 @@ use App\Http\Controllers\Controller;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('about/{name}',[AboutController::class,'show']);

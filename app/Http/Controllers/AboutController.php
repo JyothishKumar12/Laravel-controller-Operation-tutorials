@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    function show(){
-        return "Hello Conroller";
+    function show ($name){
+        return "Hello Controller".$name;
     }
 }
