@@ -9,4 +9,10 @@ class AboutController extends Controller
     function show ($name){
         return "Hello Controller".$name;
     }
+
+   
 }
+
+
+
+
